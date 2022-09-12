@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoteAddActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/vote_add_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:elevation="6dp">
+        <TextView
+            android:id="@+id/add_toolbar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="투표 추가하기"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPoint"
+            android:layout_marginLeft="20dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginHorizontal="8dp"
+                android:background="@drawable/vote_add_shape"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="TITLE"
+                    android:textColor="@color/colorPointDark" />
+
+                <EditText
+                    android:id="@+id/add_title_ev"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:hint="투표 제목을 입력하세요."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/date_select_imgv"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_date_calendar_24dp"/>
+
+                <TextView
+                    android:id="@+id/vote_add_date_tv"
+                    android:background="@drawable/vote_add_shape"
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:textSize="18dp"
+                    android:layout_height="match_parent"
+                    android:text="마감 날짜"/>
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/time_select_imgv"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_time_24dp"/>
+
+                <TextView
+                    android:textSize="18dp"
+                    android:layout_weight="4"
+                    android:id="@+id/vote_add_time_tv"
+                    android:background="@drawable/vote_add_shape"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="마감 시간"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/vote_add_shape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  참여 학과  "
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPointDark"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/com_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="컴퓨터정보공학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/eco_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="철도경영물류학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/dri_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="철도운전공학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/elec_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="철도전자전기공학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:id="@+id/car_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="철도차량공학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                    <CheckBox
+                        android:id="@+id/to_checkbox"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="철도인프라공학과"
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/vote_add_shape"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="8dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  투표 항목  "
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPointDark"/>
+
+                <EditText
+                    android:id="@+id/item0_et"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="첫번째 항목 입력"/>
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/item1_et"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="두번쨰 항목 입력"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/item2_et"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="세번째 항목 입력"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/item3_et"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="네번째 항목 입력"/>
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/item4_et"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:hint="다섯번째 항목 입력"/>
+
+                <ImageView
+                    android:id="@+id/voteitem_add_imgv"
+                    android:src="@drawable/ic_vote_add_item_24dp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/voteitem_add_tv"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="항목 추가"
+                    android:textColor="@color/colorPoint"/>
+
+                <CheckBox
+                    android:id="@+id/invaildvote_checkbox"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPointDark"
+                    android:layout_marginLeft="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="무효표 허가"/>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/voteadd_finish_btn"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginVertical="16dp"
+                android:background="@drawable/vote_add_term_btn_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPoint"
+                android:textSize="20dp"
+                android:text="등록하기"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

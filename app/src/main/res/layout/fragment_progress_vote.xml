@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VoteItemFragment.ProgressVoteFragment">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/vote_add_shape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_marginTop="8dp"
+                android:id="@+id/voteitem_progress_title_tv"
+                android:textColor="@color/colorPointDark"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:text="투표이름이 적힐 것입니당"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:id="@+id/voteitem_progress_term_tv"
+                android:textColor="@color/colorPointDark"
+                android:gravity="center"
+                android:text="투표 마감 기한: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:id="@+id/voteitem_complete_tv"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="투표를 완료하였습니다.\n  투표종료후 결과를 확인하여 주세요."/>
+
+
+        <LinearLayout
+            android:id="@+id/itemshow_linear"
+            android:background="@drawable/vote_item_radio_shape"
+            android:layout_marginVertical="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/vote_ratiogroup"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/vote_radio0"
+                    android:textSize="20dp"
+                    android:text="후보자0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/vote_radio1"
+                    android:textSize="20dp"
+                    android:text="후보자1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/vote_radio2"
+                    android:textSize="20dp"
+                    android:text="후보자2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/vote_radio3"
+                    android:textSize="20dp"
+                    android:text="후보자3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/vote_radio4"
+                    android:textSize="20dp"
+                    android:text="후보자4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/invaildvote_radio"
+                    android:textSize="20dp"
+                    android:text="무효표"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/voteitem_submit_btn"
+        android:textSize="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="투표하기"
+        android:background="@drawable/walletaddress_make_btn_shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/get_token_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="투표권 얻기"/>
+
+
+</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="225dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="left"
+    android:background="@drawable/main_navigationbar_shape">
+
+
+    <TextView
+        android:id="@+id/username_drawer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textSize="20dp"
+        android:text="이름"
+        android:gravity="center"
+        android:textColor="@color/colorPointDark"/>
+
+    <TextView
+        android:id="@+id/usernumber_drawer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:text="학번"
+        android:gravity="center"
+        android:textColor="@color/colorPointDark"/>
+
+    <TextView
+        android:id="@+id/usermajor_drawer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:text="전공학과"
+        android:gravity="center"
+        android:textColor="@color/colorPointDark"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="투표권: "
+            android:layout_marginRight="8dp"
+            android:textSize="16dp"
+            android:textColor="@color/colorPointDark"/>
+        <TextView
+            android:id="@+id/usertoken_cnt_drawer_tv"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorimpact"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="0"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:textSize="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 지갑주소"
+        android:gravity="center"
+        android:textColor="@color/colorPointDark"/>
+
+    <TextView
+        android:id="@+id/userwalletaddress_drawer_tv"
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:text="생성된 지갑이 없습니다."
+        android:textColor="@color/colorimpact"/>
+
+    <Button
+        android:id="@+id/make_walletaddress_drawer_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/walletaddress_make_btn_shape"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="지갑 생성"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/logout_drawer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPointDark"
+        android:text="로그아웃"/>
+
+
+</LinearLayout>

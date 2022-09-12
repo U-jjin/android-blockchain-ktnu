@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="major">
+        <item >----학과----</item>
+        <item>컴퓨터정보공학과</item>
+        <item>철도경영물류학과</item>
+        <item>철도인프라공학과</item>
+        <item>철도차량공학과</item>
+        <item>철도전기전자전공학과</item>
+        <item>철도운전공학과</item>
+    </string-array>
+</resources>

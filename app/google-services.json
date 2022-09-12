@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "300434271104",
+    "firebase_url": "https://ktnuvotingprogramming-e66da.firebaseio.com",
+    "project_id": "ktnuvotingprogramming-e66da",
+    "storage_bucket": "ktnuvotingprogramming-e66da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300434271104:android:b5c14b227922a114856f65",
+        "android_client_info": {
+          "package_name": "com.universeluvv.ktnuvoting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300434271104-luv6v5reqfbbk047fb18pbl5jdttuls4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.universeluvv.ktnuvoting",
+            "certificate_hash": "3dfd340e8aec684969a3868e2505dc6e66413a61"
+          }
+        },
+        {
+          "client_id": "300434271104-kmn79vl3qlmk4mmbmbjkf7b0c84j302k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJPQVEzXuowF3uXD0kjVPB9sEJF3iRYNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300434271104-kmn79vl3qlmk4mmbmbjkf7b0c84j302k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

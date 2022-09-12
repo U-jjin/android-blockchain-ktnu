@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="#FFFFFF"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:elevation="6dp">
+
+            <TextView
+                android:id="@+id/main_toolbar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="한국교통대학교 투표시스템"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPoint"
+                android:layout_marginLeft="20dp"/>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginVertical="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="8dp"
+                    android:text="진행중인 투표: "
+                    android:textColor="@color/colorPointDark"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="2.0"
+                    android:shadowColor="#33000000"/>
+
+                <TextView
+                    android:layout_marginRight="32dp"
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorimpact"
+                    android:text="투표율 표시" />
+
+                <TextView
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPointDark"
+                    android:text="완료된 투표: "
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="2.0"
+                    android:shadowColor="#33000000"/>
+                <TextView
+                    android:layout_marginVertical="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorimpact"
+                    android:text="VOTING ENDS" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/progress_voting_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="@color/colorPointDark"
+            android:text="현재 진행중인 투표가 없습니다."
+            android:gravity="center"/>
+
+        <ListView
+            android:id="@+id/vote_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#8AECEAEA"
+            android:elevation="6dp"
+            android:textFilterEnabled="true"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            android:dividerHeight="3dp"
+            android:scrollbars="vertical"></ListView>
+
+
+
+
+
+</LinearLayout>
